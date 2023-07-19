@@ -57,7 +57,6 @@ body {
 .technologies {
   background-color: rgba(255, 255, 255, 0.1);
   background-image: url('../../Images/react-js-icon.svg');
-  /* Replace 'path/to/your/image.jpg' with the actual image file path */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -267,6 +266,7 @@ body {
   color: wheat;
   height: 65rem;
   min-height: 100%;
+  height: max-content;
   text-align: center;
   margin: 0 auto;
   padding: 2rem .5rem;
@@ -293,7 +293,8 @@ body {
 /* PROJECTS */
 .projects {
   min-height: 100%;
-  background-image: url('../../Images/endless-constellation.svg');
+  /* background-image: url('../../Images/endless-constellation.svg'); */
+  background-color: hsla(0, 0%, 50%, 0.24);
   font-family: 'Yatra One', cursive;
   padding: 2rem;
   color: white;
@@ -310,6 +311,7 @@ body {
   color: rgb(22, 169, 199);
   padding: 0 25px;
   background-color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 2rem;
 }
 
 .protitle h3 {
@@ -327,8 +329,7 @@ body {
 }
 
 .project {
-  width: 4rem;
-  width: 35rem;
+  width: 32rem;
   height: 70%;
   background: grey;
   color: #1e2128;
@@ -343,12 +344,38 @@ body {
   box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.6);
-  margin: 10px 2rem;
-
+  margin: 3rem;
+  transition: transform 0.5s ease; 
+  padding-bottom: 2rem;
 }
-
+.project:hover {
+  transform: scale(1.1); 
+  box-shadow: 0px 0px 40px 10px #16a9c7; 
+}
+.project .desc{
+  padding: .2rem 1rem;
+}
 .project img {
   width: 100%;
+}
+.lastbtn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+ padding-bottom: 1rem;
+}
+.lastbtn button{
+  border-radius: 10px;
+  padding: .5rem 2rem;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+.site a{
+  color: #14e956;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .contact-body {
@@ -381,6 +408,8 @@ body {
   justify-content: space-around;
   margin: 10px;
   padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
  .mail{
@@ -394,6 +423,8 @@ body {
   justify-content: space-around; 
   margin: 10px;
   padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
  .linkedin a, .twitter a{
   width: 20%;
@@ -413,6 +444,11 @@ body {
   justify-content: space-around;
   margin: 10px;
   padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.twitter:hover, .mail:hover, .github:hover, .linkedin:hover {
+  transform: scale(1.1); 
 }
 .linkedin{
   width: 100%;
@@ -425,6 +461,8 @@ body {
   justify-content: space-around;
   margin: 10px;
   padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 
 }
 .footer{
@@ -535,9 +573,19 @@ body {
   .home {
     width: 92vw;
   }
+  .list {
+    left: 20%;
+  }
 }
 
 @media (max-width: 1000px) {
+  .midbio h3 {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .shake-emoji{
+    background-color: white;
+  }
   .home {
     flex-direction: column;
     justify-content: center;
@@ -553,10 +601,38 @@ body {
   .imagehome img {
 
     margin: 0 20%;
+    margin-top: -70%;
+    margin-bottom: 3rem;
   }
 
   .shake-emoji {
     margin-top: 4rem;
+  }
+  .list{
+    top: 140%;
+    left: 30%;
+  }
+  .tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1%;
+    margin: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 2rem;
+  
+  }
+  .tool {
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+  }
+  .bio h5 {
+    font-size: 18px;
+  }
+  .github,.mail,.twitter,.linkedin{
+    width: 80%;
   }
 }
 
@@ -571,10 +647,7 @@ body {
     width: 95%;
   }
 
-  .midbio h3 {
-    font-size: 20px;
-    line-height: 36px;
-  }
+ 
 
   .bio {
     padding: 1rem 0.2rem;
