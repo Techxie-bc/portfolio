@@ -40,7 +40,7 @@ body {
 
 .shake-emoji {
   animation: shake 2s ease-in-out infinite;
-  background-color: #14e956a3;
+  background-color: #16a9c7;
   padding: 2px 5px;
   width: 60%;
   font-size: 25px;
@@ -83,11 +83,11 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 2.2rem;
-  background: #14e956;
-  background-color: #14e956;
+  background: #16a9c7;
+  background-color: rgb(22, 169, 199);
   border: none;
   border-radius: 7px;
-  box-shadow: 9px 7px 32px -11px rgba(20, 233, 86, 0.74);
+  box-shadow: 9px 7px 32px -11px rgb(22, 169, 199);
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
@@ -278,10 +278,10 @@ body {
 .protitle {
   margin: 2rem 0;
   background-color: black;
-  border: 2px solid green;
+  border: 2px solid rgb(22, 169, 199);;
   padding: 5px 20px;
   border-radius: 10px;
-  color: #14e956;
+  color: rgb(22, 169, 199);;
   animation: enter 2s ease forwards;
   font-size: 24px;
 }
@@ -306,8 +306,8 @@ body {
 
 .protitle {
   animation: shake 2s ease-in-out infinite;
-  border: 2px solid #14e956;
-  color: #14e956;
+  border: 2px solid rgb(22, 169, 199);
+  color: rgb(22, 169, 199);
   padding: 0 25px;
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -316,7 +316,7 @@ body {
   height: 2rem;
   padding: .5rem 20px;
   border-radius: 10px;
-  border: 2px solid #14e956;
+  border: 2px solid rgb(22, 169, 199);;
 }
 
 .projectlist {
@@ -387,16 +387,19 @@ body {
   width: 100%;
   height: 4rem;
   border-radius: 10px;
-  background-color: red;
+  background-color: wheat;
   display: flex;
-  color: blue;
+  color: #16a9c7;
   align-items: center;
   justify-content: space-around; 
   margin: 10px;
   padding: 10px;
 }
-.mail a, .linkedin a, .twitter a{
+ .linkedin a, .twitter a{
   width: 20%;
+}
+.mail a img{
+  width: 60px
 }
 
 .twitter{

@@ -7,7 +7,7 @@ import {ReactComponent as Reduxic} from '../../Images/redux-icon.svg'
 import {ReactComponent as Css} from '../../Images/css-icon.svg'
 import coin from '../../Images/coin.png'
 import github from '../../Images/github-icon.svg'
-import mail from '../../Images/mail.svg'
+import mail from '../../Images/gmail-icon.png'
 import linkedin from '../../Images/linkedin-app-icon.svg'
 import twitter from '../../Images/twitter-color-icon.svg'
 
@@ -109,7 +109,7 @@ Let's collaborate and bring your digital vision to life with a touch of creativi
                                         <p className="desc">
                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aut esse, delectus nemo culpa voluptate quam maiores animi nam ducimus.
                                         </p>
-                                        <a href="#">see more</a>
+                                        {/* <a href="#">see more</a> */}
                                     </div>
                                     <div className="project">
                                         <img src={coin} alt="coin island" />
@@ -117,7 +117,7 @@ Let's collaborate and bring your digital vision to life with a touch of creativi
                                         <p className="desc">
 
                                         </p>
-                                        <a href="#">see more</a>
+                                        {/* <a href="#">see more</a> */}
                                     </div>
                                     <div className="project">
                                         <img src={coin} alt="coin island" />
@@ -125,7 +125,7 @@ Let's collaborate and bring your digital vision to life with a touch of creativi
                                         <p className="desc">
 
                                         </p>
-                                        <a href="#">see more</a>
+                                        {/* <a href="#">see more</a> */}
                                     </div>
                                     <div className="project">
                                         <img src={coin} alt="coin island" />
@@ -133,7 +133,7 @@ Let's collaborate and bring your digital vision to life with a touch of creativi
                                         <p className="desc">
 
                                         </p>
-                                        <a href="#">see more</a>
+                                        {/* <a href="#">see more</a> */}
                                     </div>
                                 </div>
                             </div>
@@ -142,19 +142,19 @@ Let's collaborate and bring your digital vision to life with a touch of creativi
                     <div className="contact-body">
                         <div className="contacts">
                             <div className="github">
-                                <a href="https://github.com/Techxie-bc" target="_blank"><img src={github} alt="github" /></a>
+                                <a href="https://github.com/Techxie-bc" target="_blank" rel="noreferrer"><img src={github} alt="github" /></a>
                                 <h3>GitHub</h3>
                             </div>
                             <div className="mail">
-                                <a href="mailto:donnaogbu@gmail.com" target="_blank"><img src={mail} alt="mail" /></a>
+                                <a href="mailto:donnaogbu@gmail.com" target="_blank" rel="noreferrer"><img src={mail} alt="mail" /></a>
                                 <h3>Mail</h3>
                             </div>
                             <div className="twitter">
-                                <a href="#"><img src={twitter} alt="twitter" target="_blank"/></a>
+                                <a href="/"><img src={twitter} alt="twitter" target="_blank" rel="noreferrer"/></a>
                                 <h3>Twitter</h3>
                             </div>
                             <div className="linkedin">
-                                <a href="#"><img src={linkedin} alt="linkedin" target="_blank" /></a>
+                                <a href="/"><img src={linkedin} alt="linkedin" target="_blank" rel="noreferrer"/></a>
                                 <h3>LinkedIn</h3>
                             </div>
                         </div>
