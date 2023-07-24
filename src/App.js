@@ -1,24 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Homepage from './components/Homepage/Homepage';
-
-// import Home from './Home';
-// import About from './About';
-// import Contact from './Contact';
+import Work from './components/Work/Work';
+import Resume from './components/Resume/Resume';
 
 const App = () => {
-  <Routes>
-        <Route path="/" element={<Homepage />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
   return (
     <>
-      < Homepage/>
-      
-        </>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </>
   );
 };
 
 export default App;
-

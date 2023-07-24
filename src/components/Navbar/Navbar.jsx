@@ -31,9 +31,9 @@ export default function Navbar() {
       <>
         <div className={`navbar ${isMobileMenuOpen ? "active" : ""}`}>
           <NavLink to="/" onClick={()=> handleNavigation('/')}>Home</NavLink>
-          <NavLink to="about" onClick={()=> handleNavigation('/about')}>Work</NavLink>
-          <NavLink to="contact" onClick={()=> handleNavigation('/resume')}>Resume</NavLink>
-          <NavLink to="contact" onClick={()=> handleNavigation('/contact')}>Contact</NavLink>
+          <NavLink to="/work" onClick={()=> handleNavigation('/work')}>Work</NavLink>
+          <NavLink to="/resume" onClick={()=> handleNavigation('/resume')}>Resume</NavLink>
+          <NavLink to="/contact" onClick={()=> handleNavigation('/contact')}>Contact</NavLink>
 
         </div>
        

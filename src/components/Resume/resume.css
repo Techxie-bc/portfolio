@@ -1,0 +1,39 @@
+.resumebody{
+    color: bisque;
+    margin-top: 10rem;
+}
+.resume{
+    width: 80%;
+    border: 2px solid #16a9c7;
+    margin: 0 auto;
+    padding: 5% 4%;
+    font-size: 18px;
+    line-height: 45px;
+}
+.prof{
+    color: orange;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+.resume h1{
+    font-size: 32px;
+}
+.experience{
+    color: #16a9c7;
+}
+li a{
+    color: #16a9c7;
+}
+@media (max-width: 500px) {
+    .prof{
+        font-size: 16px;
+    }
+    .resume h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .resumebody{
+        margin-top: 4rem;
+        text-align: center;
+    }
+}

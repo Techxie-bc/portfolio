@@ -4,7 +4,6 @@
     align-items: center;
     padding: 0px 4%;
     width: 92%;
-    /* max-width: 1440px; */
     height: 105px;
     background-color: white;
     border-bottom: 0.5px solid #470424;
@@ -125,7 +124,8 @@
     }
     .navbar {
       margin-top: 2rem;
-      height: 500px;
+      /* height: 500px; */
+      height: max-content;
     }
     
   }
