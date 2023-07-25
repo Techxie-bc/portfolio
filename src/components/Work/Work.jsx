@@ -12,7 +12,7 @@ export default function Work (){
         <Navbar />
                   <div className="projects">
                         <div className="pro-body">
-                            <div className="pro-title">
+                            <div className="pro-title prowork-title">
                             <button className="protitle">
                             <h3>WORKS</h3>
                         </button>

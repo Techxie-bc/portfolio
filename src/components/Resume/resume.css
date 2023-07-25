@@ -24,6 +24,27 @@
 li a{
     color: #16a9c7;
 }
+.download{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* height: 5rem; */
+}
+.download button{
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    background: orange;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 5rem;
+    outline: none;
+    margin: 3rem 0;
+    border: none;
+}
 @media (max-width: 500px) {
     .prof{
         font-size: 16px;
@@ -35,5 +56,9 @@ li a{
     .resumebody{
         margin-top: 4rem;
         text-align: center;
+    }
+    .resume{
+        padding: 5% 7%;
+        font-size: 16px;
     }
 }

@@ -132,6 +132,11 @@ Personal Projects
 </div>
 
                 </div>
+                <div className="download">
+                    <a href="https://drive.google.com/file/d/1cKuYx6rrfHBIEkDpcZI2E_gZ8TpbW6K-/view?usp=sharing" target="_blank" rel="noreferrer">
+                        <button>Download Resume</button>
+                    </a>
+                </div>
             </div>
         </>
     )
